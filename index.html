@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+<style>
+header {
+    padding: 40px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+body,h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flexbox {
+  display: flex;
+  flex-flow: row;
+}
+
+.nav {
+    flex:0 0 30%;
+    background: rgb(235, 210, 200);
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+.article {
+    flex: 0 0 70%;
+    padding: 20px;
+    background-color: rgba(204, 163, 146, 0.781);
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="w3-bar w3-brown" style="font-size: 20px;">
+        <a href="#personal" class="w3-bar-item w3-button w3-hide-small w3-text-white w3-right">Personal Details</a>
+        <a href="#education" class="w3-bar-item w3-button w3-hide-small w3-text-white w3-right">Education</a>
+        <a href="#workexperience" class="w3-bar-item w3-button w3-hide-small w3-text-white w3-right">Work Experience</a>
+        <a href="#skill" class="w3-bar-item w3-button w3-hide-small w3-text-white w3-right">Skills</a>
+        <a href="#language" class="w3-bar-item w3-button w3-hide-small w3-text-white w3-right">Language</a>
+        <a href="javascript:void(0)" onclick="sideMude();" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-text-white w3-right">&#9776</a>
+    </div>
+    <div id="idsidebar" class="w3-bar-block w3-brown w3-hide w3-hide-large " style="font-size: 20px; ">
+        <a href="#personal" class="w3-bar-item w3-button w3-text-white w3-left">Personal Details</a>
+        <a href="#education" class="w3-bar-item w3-button w3-text-white w3-left">Education</a>
+        <a href="#workexperience" class="w3-bar-item w3-button w3-text-white w3-left">Work Experience</a>
+        <a href="#skill" class="w3-bar-item w3-button w3-text-white w3-left">Skills</a>
+        <a href="#language" class="w3-bar-item w3-button w3-text-white w3-left">Language</a>
+    </div>
+
+
+    <div class = "w3-container w3-brown" > 
+        <header>Resume</header>
+    </div>
+
+    <div class = "flexbox">
+    <div class = "nav" id = "personal">
+        <image src="ICON.jpg"  style="width: 80%;">
+            <h1 style="padding-top: 30px; font-size: 26px;"><b>Personal Details</b></h1>
+            <div style="font-size: 20px">
+            <p style="padding-top: 15px; ">Name:</p>
+            <p>Nah Chun Khai</p>
+            <p style="padding-top: 15px; ">Contact<br>Phone Number:</p>
+            <p>012-8098180</p>
+            <p style="padding-top: 15px; ">Address:</p>
+            <p>41, Jalan Bangau, Taman Pekan Baru, 34200 Parit Buntar, Perak.</p>
+            </div>
+            <p style="padding-top: 15px; font-size: 20px">Email:</p>
+            <p style="font-size:1.2vw;"><a href="mailto:chunkhainah@hotmail.com">chunkhainah@hotmail.com</a>  (personal)</p>
+            <p style="font-size:1.2vw; "><a href="mailto:nahchunkhai@gmail.com">nahchunkhai@gmail.com</a>  (personal)</p>
+            <p style="font-size:1.2vw; "><a href="mailto:nah_chun_khai@soc.uum.edu.my">nah_chun_khai@soc.uum.edu.my</a>  (study)</p>
+            <p style="padding-top: 15px; font-size: 20px">Github:</p>
+            <p style="font-size:1.2vw; "><a href="https://github.com/chunkhai8">https://github.com/chunkhai8</a></p>
+    </div>
+
+    <div class="article" >
+        <div class="w3-container w3-padding-32" id="education">
+            <h1><b>Education</b></h1>
+            <div style="font-size: 18px; color:rgb(56, 55, 55);">
+            <p><b>University Utara Malaysia</b><br>2020 - PRESENT<br>Bachelor of Science in Information Technology with Honours</p>
+            <p><b>SMK Tunku Abdul Rahman</b><br>2018 - 2019<br>STPM</p>
+            <p><b>SMJK Krian</b><br>2013 - 2017<br>STPM</p>
+            </div>
+        </div>
+        <div class="w3-container w3-padding-32" id="workexperience">
+            <h1><b>Work Experience</b></h1>
+            <div style="font-size: 18px; color:rgb(56, 55, 55);">
+            <p><b>Edutex Trading Sdn. Bhd.</b><br>Jan 2020 - Sept 2020<br>- Store keeper</p>
+            <p><b>Edutex Trading Sdn. Bhd.</b><br>Jan 2018 - April 2018<br>- Store keeper</p>
+            </div>
+        </div>
+        
+            <div class="w3-container w3-padding-32">
+                <div style="width: 40%; float: left;" id="skill"> 
+                    <h1 style="font-size:3vw"><b>Skills</b></h1>
+                    <div style="font-size: 1.2vw; color:rgb(56, 55, 55);">
+                    <label>Java:<br></label>
+                    <progress value="50" max="100"> 50% </progress>
+                    <br>
+                    <label>HTML:<br></label>
+                    <progress value="25" max="100"> 25% </progress>
+                    <br>
+                    <label>CSS:<br></label>
+                    <progress value="25" max="100"> 25% </progress>
+                    <br>
+                    <label>W3.CSS:<br></label>
+                    <progress value="30" max="100"> 30% </progress>
+                    <br>
+                    <label>Javascript:<br></label>
+                    <progress value="25" max="100"> 25% </progress>
+                    </div>  
+                </div>
+                <div style="margin-left: 40%;" id="language"> 
+                        <h1 style="font-size:3vw"><b>Language</b></h1>
+                        <div style="font-size: 1.2vw; color:rgb(56, 55, 55);">
+                        <ul>
+                            <li>English</li>
+                            <li>Bahasa Melayu</li>
+                            <li>Mandarin</li>
+                        </ul>
+                        </div>
+                </div>
+
+                
+            </div>
+        
+            
+        
+    </div>    
+    </div>
+
+    
+    
+    <footer class="w3-brown">
+    <p>Copyright Nah Chun Khai&copy;</p>
+    </footer>
+
+
+
+
+    
+
+</body>
+<script>
+    function sideMude(){
+        var x = document.getElementById("idsidebar");
+        if(x.className.indexOf("w3-show") == -1){
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace("w3-show","");
+        }
+    }
+</script>
+</html>
